@@ -48,8 +48,8 @@ def main():
     me = lol_watcher.summoner.by_name(my_region, name)
     myid = me["id"]
     profile = lol_watcher.league.by_summoner(my_region, myid)[0]
-    #print(me)
-    #print(profile)
+    # print(me)
+    # print(profile)
     for champ in champs:
         with open(f"/home/eclipse/rito/icons/{champ[0]}") as f:
             read = f.readlines()
